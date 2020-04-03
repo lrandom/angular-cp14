@@ -1,0 +1,14 @@
+<p>
+  <input type="text" [(ngModel)]="num1" />
+
+  <button (click)="getOperator('+')">+</button>
+  <button (click)="getOperator('-')">-</button>
+  <button (click)="getOperator('*')">*</button>
+  <button (click)="getOperator('/')">/</button>
+
+  <input type="text" [(ngModel)]="num2" (change)="calc()" />
+
+  =
+
+  <input type="text" [(ngModel)]="result" />
+</p>

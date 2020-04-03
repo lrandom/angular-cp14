@@ -1,0 +1,9 @@
+<div>
+  <img [src]="largeImage" width="400" height="500" />
+
+  <div>
+    <span *ngFor="let item of images" (click)="showImage(item)">
+      <img [src]="item" width="50" height="50" />
+    </span>
+  </div>
+</div>
