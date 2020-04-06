@@ -1,0 +1,11 @@
+<input [(ngModel)]="inputPin" />
+<br>
+<br>
+<button *ngFor="let item of pins" (click)="enterPin(item)">{{item}}</button>
+<button (click)="enter()">Enter</button>
+
+<div *ngIf="isLog">
+  <button (click)="widthraw(100000)">100000</button>
+  <button (click)="widthraw(500000)">500000</button>
+  <button (click)="widthraw(1000000)">1000000</button>
+</div>
