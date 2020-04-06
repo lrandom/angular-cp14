@@ -9,7 +9,7 @@ export class CalculatorComponent implements OnInit {
   num1: number;
   num2: number;
   operatorSymbol: string;
-  result: number;
+  result: number = 0;
 
   constructor() { }
 
@@ -23,19 +23,19 @@ export class CalculatorComponent implements OnInit {
   calc() {
     switch (this.operatorSymbol) {
       case '+':
-        this.result = parseFloat(this.num1) + parseFloat(this.num2);
+        this.result = this.num1 + this.num2;
         break;
 
       case '-':
-        this.result = parseFloat(this.num1) - parseFloat(this.num2);
+        this.result = this.num1 - this.num2;
         break;
 
       case '*':
-        this.result = parseFloat(this.num1) * parseFloat(this.num2);
+        this.result = this.num1 * this.num2;
         break;
 
       case '/':
-        this.result = parseFloat(this.num1) / parseFloat(this.num2);
+        this.result = this.num1 / this.num2;
         break;
     }
   }

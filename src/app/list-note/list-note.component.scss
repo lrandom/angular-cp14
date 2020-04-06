@@ -1,0 +1,44 @@
+.note-wrapper{
+    width:500px; 
+    .add-note-wrapper{
+        textarea{
+            width: 99%;
+            border: 1px solid #cdcdcd;
+            border-radius: 5px;
+            height: 50px;
+        }
+
+        button{
+            padding:10px;
+            font-size: 14px;
+            border-radius: 5px;
+            background-color:yellow;
+        }
+    }
+
+    .list {
+        p{
+            padding:10px; 
+            font-size:24px;
+            border:1px dashed #cdcdcd;
+            .operator{
+                float:right;
+                font-size:14px;
+                margin-top:5px;
+            }
+        }
+    }
+}
+
+/*
+.note-wrapper{
+    width: 500px; 
+    border: 1px solid red; 
+}
+
+
+.note-wrapper .add-note-wrapper{
+
+
+ }*/
+

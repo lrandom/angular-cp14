@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
+import { ListNoteComponent } from './list-note/list-note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    ImagePreviewComponent
+    ImagePreviewComponent,
+    ListNoteComponent
   ],
   imports: [
     BrowserModule,

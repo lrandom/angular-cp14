@@ -1,0 +1,21 @@
+<br>
+
+<div class="note-wrapper">
+  <div class="add-note-wrapper">
+    <textarea [(ngModel)]="note">Nhập Note</textarea>
+    <button *ngIf="!isUpdate" (click)="addNote()">Thêm note</button>
+    <button *ngIf="isUpdate" (click)="saveNote()">Update note</button>
+  </div>
+
+  <div class="list">
+    <p *ngFor="let item of list; let i = index">
+      {{item}}
+
+      <span class="operator">
+        <span (click)="delete(i)">Xoá</span>
+        &nbsp;<span (click)="edit(i)">Sửa</span>
+      </span>
+
+    </p>
+  </div>
+</div>
