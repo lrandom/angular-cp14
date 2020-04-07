@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,11 @@ export class AppComponent {
     { name: "Luan", age: 28 },
     { name: "Nam", age: 29 },
   ]
+
+  constructor(public router: Router) {
+    this.router.navigate(['atm', { 'id': 10 }]);
+  }
+
   update() {
     alert("Du lieu nhap tu input la" + this.name);
   }

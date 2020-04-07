@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-atm',
   templateUrl: './atm.component.html',
@@ -11,8 +11,10 @@ export class AtmComponent implements OnInit {
   account: any = '5000000';
   db: Array<string> = ['128784334', '23232323', '287283728'];
   isLog = false;
-  constructor() {
-
+  constructor(public activedRoute: ActivatedRoute) {
+    this.activedRoute.params.subscribe((data) => {
+      alert(data.id);
+    })
   }
 
   ngOnInit() {

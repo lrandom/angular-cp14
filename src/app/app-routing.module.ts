@@ -6,7 +6,7 @@ import { ListNoteComponent } from './list-note/list-note.component';
 import { AtmComponent } from './atm/atm.component';
 
 const routes: Routes = [
-  { path: 'calculator', component: CalculatorComponent },
+  { path: 'calculator', component: CalculatorComponent, outlet: "test" },
   { path: 'image-preview', component: ImagePreviewComponent },
   { path: 'list-note', component: ListNoteComponent },
   { path: 'atm', component: AtmComponent }
