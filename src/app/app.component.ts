@@ -19,7 +19,7 @@ export class AppComponent {
   ]
 
   constructor(public router: Router) {
-    this.router.navigate(['atm', { 'id': 10 }]);
+    this.router.navigate(['atm', { 'id': 10, name: 'Luan' }]);
   }
 
   update() {

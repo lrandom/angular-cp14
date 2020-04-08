@@ -12,8 +12,9 @@ export class AtmComponent implements OnInit {
   db: Array<string> = ['128784334', '23232323', '287283728'];
   isLog = false;
   constructor(public activedRoute: ActivatedRoute) {
-    this.activedRoute.params.subscribe((data) => {
-      alert(data.id);
+    this.activedRoute.paramMap.subscribe((data: any) => {
+      // alert(data.get('id'));
+      // alert(data.get('name'));
     })
   }
 

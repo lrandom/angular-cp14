@@ -1,0 +1,9 @@
+<form [formGroup]="frm" (submit)="submit()">
+  <input type="text" formControlName="username" />
+  <div *ngIf="!frm.controls.username.valid && isSubmit">Cần điền</div>
+
+  <input type="fullname" formControlName="fullname" />
+  <div *ngIf="!frm.controls.fullname.valid && isSubmit">Cần điền</div>
+
+  <button type="submit">Submit</button>
+</form>
