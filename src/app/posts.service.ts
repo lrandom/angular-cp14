@@ -22,4 +22,9 @@ export class PostsService {
   post(id) {
     return this.http.post(environment.baseApiUrl, { id: id });
   }
+
+  upload() {
+    let formData = new FormData();
+    //formData.append('id', file); 
+  }
 }
