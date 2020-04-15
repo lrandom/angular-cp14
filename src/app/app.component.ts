@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { PostsService } from './posts.service';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +19,24 @@ export class AppComponent {
     { name: "Nam", age: 29 },
   ]
 
-  constructor(public router: Router) {
+  constructor(
+    public router: Router,
+    public postService: PostsService
+  ) {
     this.router.navigate(['atm', { 'id': 10, name: 'Luan' }]);
+
+  }
+
+  callGet() {
+    this.postService.get().subscribe((data) => {
+      alert(JSON.stringify(data));
+    })
+  }
+
+  callPost() {
+    this.postService.post(10).subscribe((data) => {
+      alert(JSON.stringify(data));
+    })
   }
 
   update() {

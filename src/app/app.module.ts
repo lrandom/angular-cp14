@@ -9,6 +9,7 @@ import { ListNoteComponent } from './list-note/list-note.component';
 import { AtmComponent } from './atm/atm.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormComponent } from './form/form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormComponent } from './form/form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
